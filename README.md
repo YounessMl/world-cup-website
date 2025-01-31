@@ -1,1 +1,1 @@
-# world-cup-website
+Just a small website for school project
