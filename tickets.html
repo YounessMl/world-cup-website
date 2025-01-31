@@ -14,7 +14,7 @@
                 <span>WC 2026</span>
             </div>
             <div class="nav-links">
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="news.html">News</a>
                 <a href="tickets.html" class="active">Tickets</a>
             </div>
@@ -124,72 +124,39 @@
     </div>
 
     <script>
-        // Match data
-        const matches = [
-            {
-                id: 1,
-                stage: 'group',
-                team1: 'Brazil',
-                team2: 'Argentina',
-                date: 'June 15, 2026',
-                venue: 'MetLife Stadium',
-                city: 'New York'
-            },
-            {
-                id: 2,
-                stage: 'group',
-                team1: 'Germany',
-                team2: 'Spain',
-                date: 'June 16, 2026',
-                venue: 'SoFi Stadium',
-                city: 'Los Angeles'
-            },
-            {
-                id: 3,
-                stage: 'group',
-                team1: 'France',
-                team2: 'England',
-                date: 'June 17, 2026',
-                venue: 'AT&T Stadium',
-                city: 'Dallas'
-            },
-            {
-                id: 4,
-                stage: 'r16',
-                team1: 'Winner Group A',
-                team2: 'Runner-up Group B',
-                date: 'July 1, 2026',
-                venue: 'Levi\'s Stadium',
-                city: 'San Francisco'
-            },
-            {
-                id: 5,
-                stage: 'quarter',
-                team1: 'TBD',
-                team2: 'TBD',
-                date: 'July 5, 2026',
-                venue: 'Mercedes-Benz Stadium',
-                city: 'Atlanta'
-            },
-            {
-                id: 6,
-                stage: 'semi',
-                team1: 'TBD',
-                team2: 'TBD',
-                date: 'July 9, 2026',
-                venue: 'Hard Rock Stadium',
-                city: 'Miami'
-            },
-            {
-                id: 7,
-                stage: 'final',
-                team1: 'TBD',
-                team2: 'TBD',
-                date: 'July 15, 2026',
-                venue: 'MetLife Stadium',
-                city: 'New York'
-            }
-        ];
+    // Match data
+    const matches = [
+      { id: 1, stage: 'group', team1: 'United States', team2: 'Algeria', date: 'June 11, 2026', venue: 'MetLife Stadium', city: 'New York' },
+      { id: 2, stage: 'group', team1: 'Chile', team2: 'Iraq', date: 'June 12, 2026', venue: 'SoFi Stadium', city: 'Los Angeles' },
+      { id: 3, stage: 'group', team1: 'United States', team2: 'Iraq', date: 'June 16, 2026', venue: 'Mercedes-Benz Stadium', city: 'Atlanta' },
+      { id: 4, stage: 'group', team1: 'Algeria', team2: 'Chile', date: 'June 17, 2026', venue: 'Levi\'s Stadium', city: 'San Francisco' },
+      { id: 5, stage: 'group', team1: 'United States', team2: 'Chile', date: 'June 21, 2026', venue: 'Hard Rock Stadium', city: 'Miami' },
+      { id: 6, stage: 'group', team1: 'Algeria', team2: 'Iraq', date: 'June 22, 2026', venue: 'NRG Stadium', city: 'Houston' },
+
+      // 🏆 Group B Matches
+      { id: 7, stage: 'group', team1: 'Argentina', team2: 'Poland', date: 'June 13, 2026', venue: 'AT&T Stadium', city: 'Dallas' },
+      { id: 8, stage: 'group', team1: 'Saudi Arabia', team2: 'South Africa', date: 'June 14, 2026', venue: 'Levi\'s Stadium', city: 'San Francisco' },
+      { id: 9, stage: 'group', team1: 'Argentina', team2: 'South Africa', date: 'June 18, 2026', venue: 'SoFi Stadium', city: 'Los Angeles' },
+      { id: 10, stage: 'group', team1: 'Poland', team2: 'Saudi Arabia', date: 'June 19, 2026', venue: 'Mercedes-Benz Stadium', city: 'Atlanta' },
+      { id: 11, stage: 'group', team1: 'Argentina', team2: 'Saudi Arabia', date: 'June 23, 2026', venue: 'Hard Rock Stadium', city: 'Miami' },
+      { id: 12, stage: 'group', team1: 'Poland', team2: 'South Africa', date: 'June 24, 2026', venue: 'NRG Stadium', city: 'Houston' },
+
+      // 🏆 Group C Matches
+      { id: 13, stage: 'group', team1: 'Brazil', team2: 'Senegal', date: 'June 15, 2026', venue: 'Mercedes-Benz Stadium', city: 'Atlanta' },
+      { id: 14, stage: 'group', team1: 'Ukraine', team2: 'Costa Rica', date: 'June 16, 2026', venue: 'Hard Rock Stadium', city: 'Miami' },
+      { id: 15, stage: 'group', team1: 'Brazil', team2: 'Costa Rica', date: 'June 20, 2026', venue: 'SoFi Stadium', city: 'Los Angeles' },
+      { id: 16, stage: 'group', team1: 'Senegal', team2: 'Ukraine', date: 'June 21, 2026', venue: 'NRG Stadium', city: 'Houston' },
+      { id: 17, stage: 'group', team1: 'Brazil', team2: 'Ukraine', date: 'June 25, 2026', venue: 'Gillette Stadium', city: 'Boston' },
+      { id: 18, stage: 'group', team1: 'Senegal', team2: 'Costa Rica', date: 'June 26, 2026', venue: 'Arrowhead Stadium', city: 'Kansas City' },
+
+      // 🏆 Group D Matches
+      { id: 19, stage: 'group', team1: 'France', team2: 'Ivory Coast', date: 'June 17, 2026', venue: 'Gillette Stadium', city: 'Boston' },
+      { id: 20, stage: 'group', team1: 'Ecuador', team2: 'Panama', date: 'June 18, 2026', venue: 'NRG Stadium', city: 'Houston' },
+      { id: 21, stage: 'group', team1: 'France', team2: 'Panama', date: 'June 22, 2026', venue: 'SoFi Stadium', city: 'Los Angeles' },
+      { id: 22, stage: 'group', team1: 'Ivory Coast', team2: 'Ecuador', date: 'June 23, 2026', venue: 'Mercedes-Benz Stadium', city: 'Atlanta' },
+      { id: 23, stage: 'group', team1: 'France', team2: 'Ecuador', date: 'June 27, 2026', venue: 'Hard Rock Stadium', city: 'Miami' },
+      { id: 24, stage: 'group', team1: 'Ivory Coast', team2: 'Panama', date: 'June 28, 2026', venue: 'NRG Stadium', city: 'Houston' },
+    ];
 
         // Global state
         let selectedMatch = null;
